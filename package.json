@@ -1,6 +1,6 @@
 {
-  "name": "react-native-collapsible-with-infinite-scrolling",
-  "version": "5.0.0-rc.13",
+  "name": "react-native-collapsible-with-infinite-scroll",
+  "version": "1.0.0",
   "description": "Collapsible tab view component for React Native with tab infinite scrolling",
   "main": "lib/commonjs/index.js",
   "react-native": "src/index.tsx",
@@ -37,14 +37,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PedroBern/react-native-collapsible-tab-view.git"
+    "url": "git+https://github.com/HexmosTech/React-Native-Tab-With-Infinite-Scroll.git"
   },
-  "author": "Pedro Bern <pedrobermoreira@gmail.com> (https://github.com/pedrobern/)",
+  "author": "Hexmos Technologies <hexmos.com> (https://github.com/HexmosTech/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pedrobern/react-native-collapsible-tab-view/issues"
+    "url": "https://github.com/HexmosTech/React-Native-Tab-With-Infinite-Scroll/issues"
   },
-  "homepage": "https://github.com/PedroBern/react-native-collapsible-tab-view#readme",
+  "homepage": "https://github.com/HexmosTech/React-Native-Tab-With-Infinite-Scroll#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^9.1.1",
     "@microsoft/tsdoc": "^0.13.0",
