@@ -1,0 +1,126 @@
+{
+  "name": "react-native-collapsible-with-infinite-scrolling",
+  "version": "5.0.0-rc.13",
+  "description": "Collapsible tab view component for React Native with tab infinite scrolling",
+  "main": "lib/commonjs/index.js",
+  "react-native": "src/index.tsx",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "release": "release-it",
+    "example": "yarn --cwd example",
+    "bootstrap": "yarn example && yarn",
+    "prepack": "bob build",
+    "docs": "ts-node ./documentation/buildDocs.ts",
+    "prepare": "bob build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "react-native-component",
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "tab",
+    "swipe",
+    "scrollable",
+    "coverflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroBern/react-native-collapsible-tab-view.git"
+  },
+  "author": "Pedro Bern <pedrobermoreira@gmail.com> (https://github.com/pedrobern/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedrobern/react-native-collapsible-tab-view/issues"
+  },
+  "homepage": "https://github.com/PedroBern/react-native-collapsible-tab-view#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^9.1.1",
+    "@microsoft/tsdoc": "^0.13.0",
+    "@release-it/conventional-changelog": "^1.1.4",
+    "@types/react": "^16.9.44",
+    "@types/react-native": "0.63.4",
+    "babel-jest": "^26.2.2",
+    "babel-preset-react-native": "^4.0.0",
+    "commitlint": "^9.1.0",
+    "eslint": "^7.6.0",
+    "eslint-config-universe": "^7.0.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "eslint-plugin-react-native-globals": "^0.1.2",
+    "husky": "^4.2.5",
+    "jest": "^26.2.2",
+    "prettier": "^2.2.1",
+    "react": "~16.11.0",
+    "react-docgen-typescript": "^1.20.5",
+    "react-native": "~0.62.2",
+    "react-native-builder-bob": "^0.18.2",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-pager-view": "^5",
+    "react-native-reanimated": "^2.3.0",
+    "release-it": "^13.6.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-pager-view": "*",
+    "react-native-reanimated": ">=2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint && yarn typescript"
+    }
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ]
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "use-deep-compare": "^1.1.0"
+  },
+  "packageManager": "yarn@1.22.11",
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
+}
