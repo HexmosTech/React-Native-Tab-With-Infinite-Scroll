@@ -1,11 +1,9 @@
-# react-native-collapsible-tab-view
+# react-native-collapsible-tab-view-with-infinite-scroll
 
 [![Build Status][build-badge]][build]
 [![Version][version-badge]][package]
 [![MIT License][license-badge]][license]
 [![runs with expo][expo-badge]][expo]
-
-
 
 - [Features](#features)
 - [Installation](#installation)
@@ -21,18 +19,16 @@
 - [Contributing](#contributing)
   - [Documentation changes](#documentation-changes)
 
-
-
 **Courtesy**
 
-extended version of the [react-native-collapsible-tab-view](https://github.com/PedroBern/react-native-collapsible-tab-view)  with a bug fix and new feature.
+extended version of the [react-native-collapsible-tab-view](https://github.com/PedroBern/react-native-collapsible-tab-view) with a bug fix and new feature.
 
 <!-- todo -->
 
 # Features
 
 - support infinite scrolling in tab contents
-- support multiple ``onScroll``
+- support multiple `onScroll`
 - Animations and interactions on the UI thread
 - Highly customizable
 - Fully typed with [TypeScript](https://typescriptlang.org)
@@ -103,11 +99,9 @@ export default Example
 
 ```
 
-
-
 ## Props
-- support all props provided in ```react-native-collapsible-tab-view```
 
+- support all props provided in `react-native-collapsible-tab-view`
 
 ### Tabs.Tab
 
@@ -123,6 +117,7 @@ Wrap your screens with `Tabs.Tab`. Basic usage looks like this:
   </Tabs.Tab>
 </Tabs.Container>
 ```
+
 ### Tabs.FlatList
 
 Use like a regular FlatList.
@@ -130,19 +125,16 @@ Use like a regular FlatList.
 ### Tabs.ScrollView
 
 Use like a regular ScrollView.
+
 #### Props
 
-
-
-|name|type|
-|:----:|:----:|
-|onScroll|`event \| undefined`|
+|   name   |         type         |
+| :------: | :------------------: |
+| onScroll | `event \| undefined` |
 
 ### Tabs.SectionList
 
 Use like a regular SectionList.
-
-
 
 ### Ref
 
@@ -162,10 +154,7 @@ const ref = React.useRef()
 
 ## Hooks
 
-- support all hooks provided by ```react-native-collapsible-tab-view```
-
-
-
+- support all hooks provided by `react-native-collapsible-tab-view`
 
 # Contributing
 
@@ -187,7 +176,6 @@ yarn lint -- --fix
 ```
 
 Remember to add tests for your change if possible.
-
 
 <!-- badges -->
 
